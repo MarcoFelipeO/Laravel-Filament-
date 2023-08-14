@@ -8,10 +8,12 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class OrderLine extends Model
 {
     protected $fillable = [
+        
         'quantity',
         'unit_price',
         'order_id',
         'product_id',
+
     ];
 
     public function order(): BelongsTo
